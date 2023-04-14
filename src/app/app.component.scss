@@ -1,0 +1,84 @@
+#visualization {
+  width: 100%;
+  border: 1px solid lightgray;
+}
+
+:host ::ng-deep {
+
+  .vis-timeline {
+    border: 2px solid purple;
+    font-family: purisa, "comic sans", cursive;
+    font-size: 12pt;
+    background-image: linear-gradient(360deg, #ffecea, #edeaff);
+    height: 40rem !important;
+
+
+  }
+
+  .vis-item {
+    border-color: #f991a3;
+    background-color: pink;
+    font-size: 15pt;
+    color: purple;
+    box-shadow: 5px 5px 20px rgba(128, 128, 128, 0.5);
+  }
+
+
+
+  .vis-item,
+  .vis-item.vis-line {
+    border-width: 3px;
+    border-radius: 8px;
+  }
+
+  .vis-time-axis .vis-text {
+    color: purple;
+
+  }
+
+  .vis-item.vis-dot {
+    border-width: 20px;
+    border-radius: 20px;
+  }
+
+  .vis-item.vis-selected {
+    border-color: blue;
+    background-color: steelblue;
+  }
+
+  .vis-time-axis .vis-grid.vis-major {
+    border-width: 2px;
+    border-color: #f991a3;
+  }
+
+  .vis-time-axis .vis-grid.vis-minor {
+    border-width: 1px;
+    border-color: #e4b4bc;
+  }
+
+  .vis-time-axis .vis-text.vis-major {
+    font-weight: bolder;
+  }
+
+
+
+  .vis-item-content {
+    display: flex !important;
+
+    & img {
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &:last-child {
+        margin-right: 20px;
+      }
+    }
+
+    & div>p {
+      margin: 0;
+    }
+  }
+}
